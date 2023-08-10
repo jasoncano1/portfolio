@@ -1,0 +1,123 @@
+/* * {
+  box-sizing: border-box;
+  border: 2px solid red;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: repeating-linear-gradient(45deg, gray 10px, black 11px);
+  background-attachment: fixed;
+  color: white;
+}
+
+header {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(90deg, #75d006 0%, #090909 100%);
+  border-bottom: 5px solid black;
+}
+
+nav {
+  padding: 15px;
+  text-align: center;
+  height: 50px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: rgb(0, 4, 128) wavy underline;
+  margin: 30px;
+  font-size: 3rem;
+  transition: color 0.3s;
+}
+
+main {
+  width: 90%;
+  margin: 5vh auto;
+  background: white;
+  border: 2px solid black;
+  color: black;
+  padding: 20px;
+  border-radius: 15px;
+  opacity: 0.70;
+}
+
+#about img {
+  border-radius: 40%;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.apps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.apps > a:first-child img {
+  height: 30vh;
+}
+
+.apps > a:first-child {
+  width: 100%;
+  height: 30vh;
+}
+
+.apps > a {
+  margin: 10px 0;
+  padding: 0;
+  width: 48%;
+  position: relative;
+}
+
+.app img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.info {
+  background: white;
+  position: absolute;
+  color: #000;
+  opacity: .85;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.info h3, .info p {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 40px;
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+
+.target {
+  font-size: 18px;
+  transition: font-size 2s;
+}
+
+.display {
+  padding: 40px;
+}
+
+embed {
+  width: 100%;
+  height: 80vh;
+}
