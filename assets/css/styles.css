@@ -43,9 +43,7 @@ main {
   padding: 10px 50px;
   border-radius: 15px;
   /* opacity: 0.70; */
-}
-
-h2 {
+}h2 {
   background: linear-gradient(-13deg, transparent 20%, black 20%, black 21%, transparent 25%, transparent 29%, black 30%,black 35%, transparent 35%);
   height: 5vh;
   font-size: 2.8vw;
