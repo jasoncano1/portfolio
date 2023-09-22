@@ -11,7 +11,7 @@ const apps = [
         url: 'https://notetaker-jc-7e9b2e3fe567.herokuapp.com/',
         description: 'This is a Heroku hosted application that allows you to create, save, and delete notes.',
         github: 'https://github.com/jasoncano1/notetaker',
-        image: 'assets/images/.gif'
+        image: 'assets/images/note-taker.png'
     },
     {
         name: 'Quiz-Game',
@@ -36,4 +36,18 @@ const apps = [
     }
 ]
 
+document.querySelector('.apps').innerHTML = '';
+
+apps.forEach(app => {
+    document.querySelector('.apps').innerHTML += `
+    <a href="${app.url}">
+          <div class="app">
+            <img src="${app.image}" alt="Application">
+            <div class="info">
+              <h3>${app.name}</h3>
+              <p>${app.description}</p>
+            </div>
+          </div>
+        </a>`
+});
     
