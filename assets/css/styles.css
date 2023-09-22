@@ -18,6 +18,7 @@ header {
   text-align: center;
   background: linear-gradient(90deg, #75d006 0%, #090909 100%);
   border-bottom: 5px solid black;
+  background-image: url(../images/wallpaperflareresized.jpg);
 }
 
 nav {
