@@ -1,3 +1,4 @@
+
 /* * {
   box-sizing: border-box;
   border: 2px solid red;
@@ -43,23 +44,48 @@ main {
 }
 
 .title  {
-  background: linear-gradient(-13deg, white 20%, black 20%, black 21%, white 25%, white 29%, black 30%,black 35%, white 35%);
-  height: 5vh;
   font-size: 2.8vw;
   color: white;
-  height:15vh;     
-  align-items:center;    
-  background-position-y:0px;
-  display: flex;
   padding-left: 20px;
 }
 
 .aboutImg {
-  background: url(../images//walkinginpennsylvania.jpg);
+position: relative;
+height: 20vh;
+overflow: hidden;
+width: 100%;
+}
+
+.aboutImg > h1 {
+  position: absolute;
+  top: -27%;
+  transform: skew(10deg, 10deg);
+  color: white;
+  font-size: 10rem;
+  text-shadow: 10px 5px 1px black;
+}
+.aboutImg > div {
+  position: absolute;
+  background: url(../images/walkinginpennsylvania.jpg);
   background-attachment: fixed;
-  background-position-y: center;
+  background-position-y: -100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutImg > div:nth-child(1) {
+  clip-path: ellipse(40% 44% at 18% 71%);
+}
+
+.aboutImg > div:nth-child(2) {
+  clip-path: ellipse(40% 44% at 67% 30%);
+  background: silver;
+}
+
+.aboutImg > div:nth-child(3) {
+  clip-path: ellipse(40% 44% at 67% 29%);
 }
 
 #about {
@@ -77,14 +103,33 @@ height: fit-content;
 }
 
 .workImg {
+  position: relative;
+  height: 20vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.workImg > h1 {
+  position: absolute;
+  top: 5%;
+  transform: skew(10deg, 10deg);
+  color: white;
+  font-size: 10rem;
+  text-shadow: 10px 5px 1px black;
+}
+.workImg > div {
+  position: absolute;
   background: url(../images/digitalworld.jpg);
+  width: 100%;
+  height: 20vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#work {
+.workImg > div:nth-child(1) {
+  clip-path: polygon(0 100%, 0 75%, 100% 0, 100% 100%);
 }
 
 .apps {
@@ -111,12 +156,37 @@ height: fit-content;
   position: relative;
 }
 
-.contactImg {
-  background: url(../images//CreationofAdam.jpg);
+.contactImg > h1 {
+  position: absolute;
+  top: -27%;
+  transform: skew(10deg, 10deg);
+  color: white;
+  font-size: 10rem;
+  text-shadow: 10px 5px 1px black;
+}
+
+.contactImg > div {
+  position: absolute;
+  background: url(../images/walkinginpennsylvania.jpg);
   background-attachment: fixed;
-  background-position: center;
+  background-position-y: -100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.contactImg > div:nth-child(1) {
+  clip-path: ellipse(40% 44% at 18% 71%);
+}
+
+.contactImg > div:nth-child(2) {
+  clip-path: ellipse(40% 44% at 67% 30%);
+  background: silver;
+}
+
+.contactImg > div:nth-child(3) {
+  clip-path: ellipse(40% 44% at 67% 29%);
 }
 
 
@@ -146,10 +216,10 @@ height: fit-content;
 
 section {
   padding: 40px;
-  background: white;
-  color: black;
+  background: black;
+  color: white;
   margin-bottom: 40px;
-  margin-top: 40px;
+  margin: 10vh auto;                    
   border-radius: 8px;
 }
 
