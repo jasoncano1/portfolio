@@ -4,6 +4,7 @@ body {
     padding: 0px;
     background: repeating-linear-gradient(45deg, gray 10px, black 11px) fixed;
     color: white;
+    background: black;
 }
 
 header {
@@ -64,29 +65,40 @@ main {
 
 .aboutImg>div {
     position: absolute;
-    background: url("../images/walkinginpennsylvania.jpg") -100% / contain no-repeat fixed;
     width: 100%;
     height: 100%;
 }
 
 .aboutImg>div:nth-child(1) {
-    background: black;
-    clip-path: ellipse(40% 44% at 50% 50%);
+    background: silver;
+    clip-path: ellipse(39.9% 43.6% at 50% 50%);
 }
 
 .aboutImg>div:nth-child(2) {
     background: url("../images/brick.png");
     clip-path: ellipse(39.8% 43% at 50% 50%);
+    background-attachment: fixed;
 }
 
 .aboutImg>div:nth-child(3) {
-    clip-path: ellipse(36% 30% at 51% 50%);
+    clip-path: ellipse(37.3% 36.8% at 50% 50%);
     background: silver;
 }
 
 .aboutImg>div:nth-child(4) {
-    clip-path: ellipse(36% 29% at 51% 50%);
+    clip-path: ellipse(37% 36% at 50% 50%);
     background: url("../images/walkinginpennsylvania.jpg") 53px 8px / 100% 65% no-repeat fixed;
+}
+
+.aboutImg>div:nth-child(5) {
+    clip-path: ellipse(7.2% 10.2% at 91% 88%);
+    background: silver;
+}
+
+.aboutImg>div:nth-child(6) {
+    clip-path: ellipse(7% 10% at 91% 88%);
+    background: url("../images/brick.png");
+    background-attachment: fixed;
 }
 
 #about {
@@ -110,67 +122,451 @@ main {
     position: relative;
     height: 40vh;
     overflow: hidden;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
+    /* background: yellow; */
 }
 
 .workImg>h1 {
     position: absolute;
-    top: 2%;
-    transform: skew(-15deg, -15deg);
+    top: 17%;
+    transform: skew(-10deg, -10deg);
     color: white;
     font-size: 5rem;
     text-shadow: black 10px 5px 1px;
+    left: 0%;
 }
 
 .workImg>div:nth-child(1) {
-    background: black;
-    clip-path: polygon(0px 100%, 0px 46%, 100% -55px, 100% 100%);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.workImg>div:nth-child(2) {
-    background: url("../images/digitalworld.jpg") fixed;
-    clip-path: polygon(10% 50%, 1% 46%, 100% -14%, 100% 0%);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.workImg>div:nth-child(3) {
-    background: white;
-    background: url("../images/digitalworld.jpg") fixed;
-    background-position: 10% 10%;
-    clip-path: polygon(0.5% 98%, 0.5% 47.5%, 10% 50.5%, 10% 98.5%);
+    background: url("../images/digitalworld.jpg") center center / cover no-repeat fixed;
+    /* background: silver; */
+    clip-path: polygon(30px 66.7%, 89.5% 4%, 88.5% 73%, 2% 90%);
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
 .workImg>div:nth-child(4) {
-    background: url("../images/digitalworld.jpg") center center / cover no-repeat fixed;
-    clip-path: polygon(10.5% 99.5%, 10.5% 50%, 99.5% 2%, 99.5% 99%);
+    /* background: url("../images/digitalworld.jpg") no-repeat fixed; */
+    background: black;
+    clip-path: polygon(2% 65%, 90.1% 2%, 98% 12%, 10.2% 70.8%);
     position: absolute;
     width: 100%;
     height: 100%;
+    opacity: 0.8;
 }
 
-.apps {
+.workImg4 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: 25%;
+    animation: img2 20s 5s infinite;
+}
+
+@keyframes img2 {
+    0% {
+        bottom: 25%;
+        left: 0;
+    }
+
+    10% {
+        transform: scale(1.5);
+        left: 0;
+    }
+
+    20% {
+        transform: scale(1.5);
+        left: -25%;
+        bottom: 25%;
+    }
+
+    30% {
+        transform: scale(1.5);
+        left: -25%;
+        bottom: 75%;
+    }
+
+    40% {
+        transform: scale(1.5);
+        left: 15%;
+        bottom: 75%;
+    }
+
+    50% {
+        transform: scale(2);
+        left: 15%;
+        bottom: 75%;
+    }
+
+    60% {
+        transform: scale(2);
+        left: 15%;
+        bottom: 25%;
+    }
+
+    70% {
+        transform: scale(1.5);
+        left: 15%;
+        bottom: 25%;
+    }
+
+    80% {
+        transform: scale(1.5);
+        left: 5%;
+        bottom: 25%;
+    }
+
+    90% {
+        transform: scale(1);
+        left: 5%;
+        bottom: 25%;
+    }
+
+    100% {
+        transform: scale(1.1);
+        left: 0;
+        bottom: 25%;
+    }
+}
+
+@keyframes img7 {
+    0% {
+        top: 25%;
+        left: 0;
+    }
+
+    10% {
+        transform: scale(1.5);
+        left: 0;
+    }
+
+    20% {
+        transform: scale(1.5);
+        left: -25%;
+        top: 25%;
+    }
+
+    30% {
+        transform: scale(1.5);
+        left: -25%;
+        top: 75%;
+    }
+
+    40% {
+        transform: scale(1.5);
+        left: 15%;
+        top: 75%;
+    }
+
+    50% {
+        transform: scale(2);
+        left: 15%;
+        top: 75%;
+    }
+
+    60% {
+        transform: scale(2);
+        left: 15%;
+        top: 25%;
+    }
+
+    70% {
+        transform: scale(1.5);
+        left: 15%;
+        top: 25%;
+    }
+
+    80% {
+        transform: scale(1.5);
+        left: 5%;
+        top: 25%;
+    }
+
+    90% {
+        transform: scale(1);
+        left: 5%;
+        top: 25%;
+    }
+
+    100% {
+        transform: scale(1.1);
+        left: 0;
+        top: 25%;
+    }
+}
+
+.workImg>div:nth-child(3) {
+    background: rgb(255, 255, 255);
+    /* background: url("../images/digitalworld.jpg") no-repeat fixed; */
+    background-position: 10% 10%;
+    clip-path: polygon(2% 66.4%, 10% 72%, 10% 98%, 2% 90.5%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .95;
+}
+
+.workImg3 {
+    position: absolute;
+    width: 50%;
+    height: 50vh;
+    animation: img3 20s infinite;
+}
+
+.workImg>div:nth-child(2) {
+    /* background: url("../images/digitalworld.jpg") center center / cover no-repeat fixed; */
+    clip-path: polygon(90% 3%, 97.9% 13%, 98% 98%, 89% 72.8%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .85;
+}
+
+.workImg2 {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    /* animation: img3 20s 5s infinite; */
+    bottom: 0px;
+    background-attachment: fixed;
+    /* opacity: .5; */
+    animation: img2 20s infinite;
+}
+
+.workImg>div:nth-child(5) {
+    background: url("../images/digitalworld.jpg") no-repeat fixed;
+    /* background: silver; */
+    background-position: 0% 0%;
+    clip-path: polygon(10.3% 72%, 97.7% 13.8%, 97.8% 97%, 10.3% 98%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+}
+
+.workImg5 {
+    width: 100%;
+    height: 100vh;
+    /* animation: img2 20s infinite; */
+    /* background-attachment: fixed; */
+}
+
+.workImg>div:nth-child(6) {
+    background: url("../images/digitalworld.jpg") no-repeat fixed;
+    background: silver;
+    background-position: 100% 18%;
+    clip-path: polygon(2.3% 91%, 88.7% 74.1%, 97.7% 99%, 10.2% 97.8%);
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-size: 90%;
+}
+
+.workImg6 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+.workImg>div:nth-child(7) {
+    /* background: url("../images/digitalworld.jpg") no-repeat fixed; */
+    background: black;
+    clip-path: polygon(2% 65%, 90.1% 2%, 98% 12%, 10.2% 70.8%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.workImg7 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: -25%;
+    animation: img7 20s 3s infinite;
+}
+
+@keyframes img3 {
+    0% {
+        transform: scale(1);
+        left: 0%;
+        top: 0;
+    }
+    10% {
+        left: -40%;
+        transform: scale(1);
+    }
+    20% {
+        left: -40%;
+        transform: scale(1.80);
+        top: 0%;
+    }
+    30% {
+        top: 50%;
+        left: -40%;
+    }
+    50% {
+        transform: scale(1.80);
+        left: -25%;
+    }
+    50% {
+        transform: scale(1);
+        left: -25%;
+        top: 40%;
+    }
+    60% {
+        transform: scale(1);
+        left: 0;
+        top: 40%;
+    }
+    70% {
+        top: 30%;
+        transform: scale(1);
+    }
+    80% {
+        left: 0;
+        top: 30%;
+        transform: scale(2);
+    }
+    90% {
+        transform: scale(2);
+        top: 0;
+    }
+    100% {
+        transform: scale(1);
+        top: 0;
+        left: 0;
+    }
+}
+
+#appNav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 60%;
+    width: 80%;
     margin: 0px auto;
 }
 
-.apps>a:first-child img {
-    height: 40vh;
+#appNav img:active {
+    border: 2px solid red;
 }
 
-.apps>a:first-child {
+#appNav img:hover {
+    transform: scale(1.15);
+}
+
+#appNav img {
+    height: 100%;
+    border: 2 solid transparent;
+    border-radius: 8px;
+}
+
+#appDiv {
+    width: 80%;
+    margin: 5vh auto;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+#appDiv > a {
+    width: 60%;
+}
+
+#appDiv > a > img {
     width: 100%;
-    height: 40vh;
+    border-radius: 8px;
+}
+
+@keyframes activeApp {
+    
+    0% {
+        transform: rotateY(0deg);
+    }
+    
+    50% {
+        transform: rotateY(90deg);
+    }
+    
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+.info {
+    position: relative;
+    width: 35%;
+    animation: activeInfo 2s linear;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+}
+
+@keyframes activeInfo {
+    0% {
+        opacity: 0;
+        bottom: 50px;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 0;
+    }
+}
+
+#h1 {
+    text-align: center;
+    margin: auto;
+}
+
+#p1 {
+    font-size: 1.5vh;
+}
+
+.info a {
+    width: 40%;
+    text-decoration: none;
+}
+
+.info button {
+    background: teal;
+    color: white;
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 4px;
+    font-size: 1.2vw;
+}
+
+.info button img {
+    width: 20%;
+    height: 100%;
+}
+
+#a2 {
+    /* position: absolute; */
+    /* bottom: 10px; */
+    /* left: 10px; */
+    width: 45%;
+    align-items: end;
+    display: flex;
+}
+
+#a3 {
+    /* position: absolute; */
+    /* bottom: 10px; */
+    /* right: 10px; */
+    width: 45%;
+    /* font-size: 1.5vw; */
+    display: flex;
+    align-items: end;
 }
 
 .apps>a {
@@ -180,38 +576,62 @@ main {
     position: relative;
 }
 
-.contactImg>h1 {
-    position: absolute;
-    top: -27%;
-    transform: skew(10deg, 10deg);
+.contactImg {
+    position: relative;
+    height: 20vh;
+    background: url(../images/background.png);
+    background-size: 100% 20vh;
+}
+
+#contactTitle {
     color: white;
-    font-size: 10rem;
-    text-shadow: black 10px 5px 1px;
+    font-size: 6.2vw;
+    animation: contact 2s;
+    margin-bottom: 0;
+    margin-top: 20vh;
 }
 
-.contactImg>div {
+@keyframes contact {
+    0%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+}
+
+#adam {
     position: absolute;
-    background: url("../images/walkinginpennsylvania.jpg") -100% / contain no-repeat fixed;
-    width: 100%;
-    height: 100%;
+    bottom: 0;
+    height: 20vh;
+    left: 50px;
+    animation: adam 1s linear;
+    max-width: 30%;
 }
 
-.contactImg>div:nth-child(1) {
-    clip-path: ellipse(40% 44% at 18% 71%);
+@keyframes adam {
+    0%{
+        bottom: -100px;
+
+    }
 }
 
-.contactImg>div:nth-child(2) {
-    clip-path: ellipse(40% 44% at 67% 30%);
-    background: silver;
+#God {
+    position: absolute;
+    right: 50px;
+    top: -100%;
+    height: 40vh;
+    animation: God 2s;
+    max-width: 60%;
 }
 
-.contactImg>div:nth-child(3) {
-    clip-path: ellipse(40% 44% at 67% 29%);
-}
+@keyframes God {
+    0%{
+        top: -150%;
+        right: -100px;
+        opacity: 0%;
 
-
-.app{
-    position: relative; 
+    }
 }
 
 .app img {
@@ -222,25 +642,9 @@ main {
     padding: 0px;
 }
 
-.info {
-    background: black;
-    position: absolute;
-    color: white;
-    opacity: 0.85;
-    bottom: 20px;
-    border-radius: 8px;
-    padding: 10px;
-    width: 90%;
-    left: 2%;
-}
-
-.info h3, .info p {
-    margin: 0px;
-    padding: 0px;
-}
-
 section {
     padding: 40px;
+    background: black;
     color: white;
     margin: 10vh auto;
     border-radius: 8px;
