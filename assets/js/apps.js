@@ -49,13 +49,38 @@ const getApp = i => {
     info.style.animation = 'unset';
     img1.style.animation = 'unset';
     p1.innerHTML = apps[i].description;
-    setTimeout(() => img1.src = apps[i].image, 600);
-    setTimeout(()=>info.style.animation = 'activeInfo 1s linear',100);
-    setTimeout(() => img1.style.animation = 'activeApp 1s linear', 100);
+    setTimeout(() => img1.src = apps[i].image, 300);
+    setTimeout(() => info.style.animation = 'activeInfo .25s linear', 100);
+    setTimeout(() => img1.style.animation = 'activeApp .25s linear', 100);
 }
 
 getApp(0)
 
-const mobileResponse = () => {
-    
-}
+let animateContact = true;
+const contactAnimation = () => {
+
+    if (animateContact) {
+        animateContact = false;
+
+        God.style.animation = 'unset';
+        adam.style.animation = 'unset';
+
+        contactTitle.style.display = '1';
+        document.querySelectorAll('#contact a button').forEach(el => {
+            el.style.animation = 'btn 3s linear';
+            el.style.opacity = '1';
+        });
+
+        setTimeout(() => {
+            God.style.animation = 'God 3s';
+            adam.style.animation = 'adam 1.5s linear';
+
+            God.style.opacity = '1';
+            adam.style.opacity = '1';
+        }, 100)
+    };
+};
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY >= contactTitle.offsetTop - document.querySelector('.contactImg').offsetHeight) contactAnimation();
+});

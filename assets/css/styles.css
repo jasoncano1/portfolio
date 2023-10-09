@@ -23,6 +23,8 @@ nav {
     padding: 15px;
     text-align: center;
     height: 50px;
+    display: flex;
+    align-items: center;
 }
 
 nav a {
@@ -34,13 +36,13 @@ nav a {
 }
 
 main {
-    width: 90%;
+    /* width: 90%; */
     margin: 5vh auto;
-    padding: 10px 50px;
+    /* padding: 10px 50px; */
     border-radius: 15px;
 }
 
-.workImg > h1 {
+.workImg>h1 {
     font-size: 2.8vw;
     color: white;
     padding-left: 20px;
@@ -48,19 +50,20 @@ main {
 
 .aboutImg {
     position: relative;
-    height: 40vh;
+    height: 50vh;
     overflow: hidden;
     width: 100%;
+    margin-top: 10vh;
 }
 
 .aboutImg>h1 {
     position: absolute;
     transform: skew(-5deg, -25deg);
     color: white;
-    font-size: 4rem;
+    font-size: 4vw;
     text-shadow: black 10px 5px 1px;
-    left: 0%;
-    top: 0%;
+    left: 5%;
+    /* top: 10px; */
 }
 
 .aboutImg>div {
@@ -103,7 +106,7 @@ main {
 
 #about {
     background: transparent;
-    margin: 0px auto 20vh;
+    margin: 10vh auto auto;
 }
 
 #about img {
@@ -118,50 +121,30 @@ main {
     margin: 20px auto;
 }
 
+#divider1 {
+    background: linear-gradient(180deg, black 20%, #ad5104 60%);
+    height: 10vh;
+    margin-bottom: 0;
+}
+
 .workImg {
     position: relative;
-    height: 40vh;
+    height: 30vh;
     overflow: hidden;
     width: 80%;
     margin: 0 auto;
-    /* background: yellow; */
+    background: #ad5104;
+    padding: 5% 10% 0;
 }
 
 .workImg>h1 {
     position: absolute;
-    top: 17%;
+    top: 10%;
     transform: skew(-10deg, -10deg);
     color: white;
-    font-size: 5rem;
-    text-shadow: black 10px 5px 1px;
-    left: 0%;
-}
-
-.workImg>div:nth-child(1) {
-    background: url("../images/digitalworld.jpg") center center / cover no-repeat fixed;
-    /* background: silver; */
-    clip-path: polygon(30px 66.7%, 89.5% 4%, 88.5% 73%, 2% 90%);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.workImg>div:nth-child(4) {
-    /* background: url("../images/digitalworld.jpg") no-repeat fixed; */
-    background: black;
-    clip-path: polygon(2% 65%, 90.1% 2%, 98% 12%, 10.2% 70.8%);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-}
-
-.workImg4 {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    bottom: 25%;
-    animation: img2 20s 5s infinite;
+    font-size: 5vw;
+    /* text-shadow: black 10px 5px 1px; */
+    left: 5%;
 }
 
 @keyframes img2 {
@@ -230,81 +213,32 @@ main {
     }
 }
 
-@keyframes img7 {
-    0% {
-        top: 25%;
-        left: 0;
-    }
-
-    10% {
-        transform: scale(1.5);
-        left: 0;
-    }
-
-    20% {
-        transform: scale(1.5);
-        left: -25%;
-        top: 25%;
-    }
-
-    30% {
-        transform: scale(1.5);
-        left: -25%;
-        top: 75%;
-    }
-
-    40% {
-        transform: scale(1.5);
-        left: 15%;
-        top: 75%;
-    }
-
-    50% {
-        transform: scale(2);
-        left: 15%;
-        top: 75%;
-    }
-
-    60% {
-        transform: scale(2);
-        left: 15%;
-        top: 25%;
-    }
-
-    70% {
-        transform: scale(1.5);
-        left: 15%;
-        top: 25%;
-    }
-
-    80% {
-        transform: scale(1.5);
-        left: 5%;
-        top: 25%;
-    }
-
-    90% {
-        transform: scale(1);
-        left: 5%;
-        top: 25%;
-    }
-
-    100% {
-        transform: scale(1.1);
-        left: 0;
-        top: 25%;
-    }
-}
-
-.workImg>div:nth-child(3) {
+.workImg>div:nth-child(1) {
     background: rgb(255, 255, 255);
     /* background: url("../images/digitalworld.jpg") no-repeat fixed; */
     background-position: 10% 10%;
-    clip-path: polygon(2% 66.4%, 10% 72%, 10% 98%, 2% 90.5%);
+    clip-path: polygon(2% 46.4%, 10% 52%, 10% 68%, 2% 60.5%);
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: .95;
+}
+
+.workImg>div:nth-child(2) {
+    background: url("../images/digitalworld.jpg") no-repeat fixed;
+    clip-path: polygon(2.5% 45.9%, 78.2% 4.2%, 97.8% 24%, 12.4% 51.3%);
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    /* opacity: 0.6; */
+    background: black;
+}
+
+.workImg4 {
+    position: absolute;
+    width: 80%;
+    height: 100vh;
+    bottom: 25%;
+    animation: img2 20s 5s infinite;
 }
 
 .workImg3 {
@@ -314,36 +248,15 @@ main {
     animation: img3 20s infinite;
 }
 
-.workImg>div:nth-child(2) {
-    /* background: url("../images/digitalworld.jpg") center center / cover no-repeat fixed; */
-    clip-path: polygon(90% 3%, 97.9% 13%, 98% 98%, 89% 72.8%);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: black;
-    opacity: .85;
-}
-
-.workImg2 {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    /* animation: img3 20s 5s infinite; */
-    bottom: 0px;
-    background-attachment: fixed;
-    /* opacity: .5; */
-    animation: img2 20s infinite;
-}
-
-.workImg>div:nth-child(5) {
+.workImg>div:nth-child(3) {
     background: url("../images/digitalworld.jpg") no-repeat fixed;
     /* background: silver; */
-    background-position: 0% 0%;
-    clip-path: polygon(10.3% 72%, 97.7% 13.8%, 97.8% 97%, 10.3% 98%);
+    background-position: 60% 0%;
+    clip-path: polygon(10.1% 52%, 78.2% 24.2%, 78.2% 57.8%, 10.1% 68%);
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: .6;
+    /* opacity: 0.6; */
 }
 
 .workImg5 {
@@ -353,90 +266,62 @@ main {
     /* background-attachment: fixed; */
 }
 
-.workImg>div:nth-child(6) {
-    background: url("../images/digitalworld.jpg") no-repeat fixed;
-    background: silver;
-    background-position: 100% 18%;
-    clip-path: polygon(2.3% 91%, 88.7% 74.1%, 97.7% 99%, 10.2% 97.8%);
-    /* position: absolute; */
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-    background-size: 90%;
-}
-
-.workImg6 {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-attachment: fixed;
-}
-
-
-.workImg>div:nth-child(7) {
-    /* background: url("../images/digitalworld.jpg") no-repeat fixed; */
-    background: black;
-    clip-path: polygon(2% 65%, 90.1% 2%, 98% 12%, 10.2% 70.8%);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-}
-
-.workImg7 {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    bottom: -25%;
-    animation: img7 20s 3s infinite;
-}
-
 @keyframes img3 {
     0% {
         transform: scale(1);
         left: 0%;
         top: 0;
     }
+
     10% {
         left: -40%;
         transform: scale(1);
     }
+
     20% {
         left: -40%;
         transform: scale(1.80);
         top: 0%;
     }
+
     30% {
         top: 50%;
         left: -40%;
     }
+
     50% {
         transform: scale(1.80);
         left: -25%;
     }
+
     50% {
         transform: scale(1);
         left: -25%;
         top: 40%;
     }
+
     60% {
         transform: scale(1);
         left: 0;
         top: 40%;
     }
+
     70% {
         top: 30%;
         transform: scale(1);
     }
+
     80% {
         left: 0;
         top: 30%;
         transform: scale(2);
     }
+
     90% {
         transform: scale(2);
         top: 0;
     }
+
     100% {
         transform: scale(1);
         top: 0;
@@ -444,12 +329,18 @@ main {
     }
 }
 
+#work {
+    background: #ad5104;
+    padding-bottom: 20vh;
+}
+
 #appNav {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: 80%;
     margin: 0px auto;
+    height: fit-content;
+    padding-top: 5vh;
 }
 
 #appNav img:active {
@@ -461,9 +352,9 @@ main {
 }
 
 #appNav img {
-    height: 100%;
     border: 2 solid transparent;
     border-radius: 8px;
+    width: 18%;
 }
 
 #appDiv {
@@ -474,25 +365,25 @@ main {
     justify-content: space-between;
 }
 
-#appDiv > a {
+#appDiv>a {
     width: 60%;
 }
 
-#appDiv > a > img {
+#appDiv>a>img {
     width: 100%;
     border-radius: 8px;
 }
 
 @keyframes activeApp {
-    
+
     0% {
         transform: rotateY(0deg);
     }
-    
+
     50% {
         transform: rotateY(90deg);
     }
-    
+
     100% {
         transform: rotateY(0deg);
     }
@@ -506,6 +397,10 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: stretch;
+    border: 1px solid #0552a2;
+    border-radius: 8px;
+    padding: 10px;
+    background: black;
 }
 
 @keyframes activeInfo {
@@ -535,7 +430,7 @@ main {
 }
 
 .info button {
-    background: teal;
+    background: #0552a2;
     color: white;
     padding: 5px;
     display: flex;
@@ -543,6 +438,8 @@ main {
     justify-content: space-between;
     border-radius: 4px;
     font-size: 1.2vw;
+    height: 50px;
+    align-items: center;
 }
 
 .info button img {
@@ -551,20 +448,13 @@ main {
 }
 
 #a2 {
-    /* position: absolute; */
-    /* bottom: 10px; */
-    /* left: 10px; */
     width: 45%;
     align-items: end;
     display: flex;
 }
 
 #a3 {
-    /* position: absolute; */
-    /* bottom: 10px; */
-    /* right: 10px; */
     width: 45%;
-    /* font-size: 1.5vw; */
     display: flex;
     align-items: end;
 }
@@ -576,59 +466,102 @@ main {
     position: relative;
 }
 
+#divider2 {
+    background: linear-gradient(0deg, black 20%, #ad5104 60%);
+    height: 10vh;
+    margin-top: 0;
+}
+
+#contact {
+    display: flex;
+    height: 5vh;
+    justify-content: space-between;
+    padding: 5vh 5%;
+    margin: 0 auto 36.8vh;
+    position: relative;
+    z-index: 2;
+    background: black;
+    
+}
+
+
+#contact>a {
+    width: 28%;
+    height: 100%;
+    text-decoration: none;
+}
+
+#contact>a>button {
+    height: 100%;
+    background: #0552a2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    font-size: 1.2vw;
+    color: white;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+@keyframes btn {
+    0% {
+        filter: blur(50px);
+    }
+}
+
+#contact>a>button>img {
+    height: 100%;
+}
+
 .contactImg {
     position: relative;
-    height: 20vh;
+    height: 40vh;
     background: url(../images/background.png);
-    background-size: 100% 20vh;
+    background-size: 100% 40vh;
 }
 
 #contactTitle {
     color: white;
-    font-size: 6.2vw;
+    font-size: 3.5vw;
     animation: contact 2s;
     margin-bottom: 0;
-    margin-top: 20vh;
-}
-
-@keyframes contact {
-    0%{
-        opacity: 0;
-    }
-    90%{
-        opacity: 0;
-    }
+    margin-top: 40vh;
+    margin-left: 5%;
 }
 
 #adam {
     position: absolute;
+    opacity: 0;
     bottom: 0;
     height: 20vh;
-    left: 50px;
-    animation: adam 1s linear;
+    left: 25%;
+    animation: adam 1.5s linear;
     max-width: 30%;
 }
 
 @keyframes adam {
-    0%{
+    0% {
         bottom: -100px;
-
+        left: 0;
     }
 }
 
 #God {
     position: absolute;
-    right: 50px;
-    top: -100%;
+    left: 55%;
+    opacity: 0;
+    top: 0%;
     height: 40vh;
-    animation: God 2s;
+    animation: God 3s;
     max-width: 60%;
 }
 
 @keyframes God {
-    0%{
-        top: -150%;
-        right: -100px;
+    0% {
+        top: -75%;
+        left: 75%;
         opacity: 0%;
 
     }
@@ -640,14 +573,6 @@ main {
     border-radius: 15px;
     margin: 0px;
     padding: 0px;
-}
-
-section {
-    padding: 40px;
-    background: black;
-    color: white;
-    margin: 10vh auto;
-    border-radius: 8px;
 }
 
 section h2 {
