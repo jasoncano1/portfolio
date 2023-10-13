@@ -6,22 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jason Cano's Portfolio</title>
   <link rel="stylesheet" href="assets/css/styles.css">
-
 </head>
 
 <body>
-  <header>
-    <h1 id="aboutH1">Jason Cano</h1>
+  <div class="fullContent">
+    <header>
+      <h1 id="aboutH1">Jason Cano</h1>
 
-    <nav>
-      <a href="#aboutH1" class="target" style="font-weight: bold; text-decoration: underline;">About</a>
-      <a href="#divider1" class="target" style="font-weight: bold; text-decoration: underline;">Work</a>
-      <a href="#contact" class="target" style="font-weight: bold; text-decoration: underline;">Contact</a>
-      <a href="/resume.html" class="target" style="font-weight: bold; text-decoration: underline;">Resume</a>
-    </nav>
-  </header>
-
-  <main>
+      <nav>
+        <a href="#aboutH1" class="target" style="font-weight: bold; text-decoration: underline;">About</a>
+        <a href="#workDiv" class="target" style="font-weight: bold; text-decoration: underline;">Work</a>
+        <a href="#contact" class="target" style="font-weight: bold; text-decoration: underline;">Contact</a>
+        <a href="/resume.html" class="target" style="font-weight: bold; text-decoration: underline;">Resume</a>
+      </nav>
+    </header>
 
     <div class="aboutImg">
       <div></div>
@@ -44,9 +42,34 @@
       <p>My experience spans material handling, field technician roles, service coordination,
         logistics, and warehouse management among others.</p>
     </div>
+  </div>
 
-    <div id="divider1"></div>
+  <div id="skills">
+    
+    <img src="assets/images/api.png" alt="api">
+    <img src="assets/images/Apollo.png" alt="Apollo">
+    <img src="assets/images/bootstrap.png" alt="bootstrap">
+    <img src="assets/images/css.png" alt="css">
+    <img src="assets/images/dashboaring.png" alt="dashboarding">
+    <img src="assets/images/express.png" alt="express">
+    <img src="assets/images/git.png" alt="git">
+    <img src="assets/images/graphql.png" alt="graphql">
+    <img src="assets/images/html.png" alt="html">
+    <img src="assets/images/javascript.png" alt="javascript">
+    <img src="assets/images/jquery.png" alt="jquery">
+    <img src="assets/images/mongo.png" alt="mongo">
+    <img src="assets/images/mysql.png" alt="mysql">
+    <img src="assets/images/node.png" alt="node">
+    <img src="assets/images/sequelize.png" alt="sequelize">
+    <img src="assets/images/SQL.png" alt="SQL">
+    <img src="assets/images/vscode.png" alt="visualstudio">
+    <img src="assets/images/webpack.png" alt="webpack"> 
 
+  </div>
+
+  <div id="divider1"></div>
+
+  <div id="workDiv" class="fullContent">
     <div class="workImg">
       <div>
         <img class="workImg3" src="./assets/images/digitalworld.jpg" alt="digitalworld.jpg" srcset="">
@@ -59,50 +82,51 @@
       <h1>Applications</h1>
     </div>
 
-    <section id="work">
-      <div class="apps">
-        <nav id="appNav"></nav>
-        <div id="appDiv">
-          <a id="a1" href="" target="_blank">
-            <img id="img1" src="" />
+    <div class="apps">
+      <nav id="appNav"></nav>
+      <div id="appDiv">
+        <a id="a1" href="" target="_blank">
+          <img id="img1" src="" />
         </a>
         <div id="info" class="info">
-            <h1 id="h1"></h1>
-            <p id="p1"></p>
-            <a id="a2" href="" target="_blank">
-                <button>Website</button>
-            </a>
-            <a id="a3" href="https://github.com/jasoncano1">
-                <button>Github <img src="./assets/images/github.png" /> </button>
-            </a>
-        </div>
-
+          <h1 id="h1"></h1>
+          <p id="p1"></p>
+          <a id="a2" href="" target="_blank">
+            <button>Website</button>
+          </a>
+          <a id="a3" href="https://github.com/jasoncano1">
+            <button>Github <img src="./assets/images/github.png" /> </button>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <div id="divider2"></div>
+  <div id="divider2"><div></div></div>
 
-    <h1 id="contactTitle">Contact</h1>
-    <div class="contactImg">
-        <img id="adam" src="../assets/images/adam.png" alt="">
-        <img id="God" src="../assets/images/God.png" alt="" srcset="">
+  <div class="fullContent">
+    
+    <div id="contactImg">
+      <h1 id="contactTitle">Contact</h1>
+      <img id="adam" src="../assets/images/adam.png" alt="">
+      <img id="God" src="../assets/images/God.png" alt="" srcset="">
     </div>
 
     <section id="contact">
+      <img src="./assets/images/aboutmepic.png" />
+      <div>
         <a href="https://www.linkedin.com/in/jason-cano-81545828b/">
-          <button>LinkedIn <img src="./assets/images/github.png" /></button>
+          <button>LinkedIn <img src="./assets/images/linkedIn.png" /></button>
         </a>
         <a href="https://github.com/jasoncano1">
           <button>Github <img src="./assets/images/github.png" /></button>
         </a>
         <a href="https://www.jasoncano0509@gmail.com">
-          <button>Email: jasoncano0509@gmail.com<img src="./assets/images/github.png" /></button>
+          <button>Email: jasoncano0509@gmail.com<img src="./assets/images/mail.png" /></button>
         </a>
       </div>
     </section>
-
-  </main>
+  </div>
 
   <script src="./assets/js/apps.js"></script>
 </body>

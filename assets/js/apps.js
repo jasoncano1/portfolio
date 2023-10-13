@@ -34,7 +34,7 @@ const apps = [
         github: 'https://github.com/jasoncano1/mvc-tech-blog',
         image: 'assets/images/mvc.gif'
     }
-]
+];
 
 apps.forEach((app, i) => {
     document.querySelector('#appNav').innerHTML += `
@@ -65,8 +65,7 @@ const contactAnimation = () => {
         God.style.animation = 'unset';
         adam.style.animation = 'unset';
 
-        contactTitle.style.display = '1';
-        document.querySelectorAll('#contact a button').forEach(el => {
+        document.querySelectorAll('#contact>*').forEach(el=>{
             el.style.animation = 'btn 3s linear';
             el.style.opacity = '1';
         });
@@ -82,5 +81,5 @@ const contactAnimation = () => {
 };
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY >= contactTitle.offsetTop - document.querySelector('.contactImg').offsetHeight) contactAnimation();
+    if (window.scrollY >= contactImg.offsetTop) contactAnimation();
 });
