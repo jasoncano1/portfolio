@@ -31,13 +31,17 @@ nav {
     align-items: center;
 }
 
+#aboutH1 {
+    font-size: 3.5vw;
+}
+
 nav a {
     color: rgb(255, 255, 255);
     text-decoration: underline wavy rgb(0, 4, 128);
     margin: 30px;
-    font-size: 3rem;
+    font-size: 1.5vw;
     transition: color 0.3s ease 0s;
-}
+}  
 
 #workDiv {
     background: #ad5104;
@@ -51,7 +55,7 @@ nav a {
 
 .aboutImg {
     position: relative;
-    height: 45vh;
+    height: 35vh;
     overflow: hidden;
     width: 100%;
     margin-top: 10vh;
@@ -61,10 +65,10 @@ nav a {
     position: absolute;
     transform: skew(-5deg, -25deg);
     color: white;
-    font-size: 4vw;
+    font-size: 2.2vw;
     text-shadow: black 10px 5px 1px;
-    left: 5%;
-    /* top: 10px; */
+    left: 18%;
+    top: 5%;
 }
 
 .aboutImg>div {
@@ -75,34 +79,40 @@ nav a {
 
 .aboutImg>div:nth-child(1) {
     background: silver;
-    clip-path: ellipse(39.9% 43.6% at 50% 50%);
+    clip-path: ellipse(29.9% 43.6% at 50% 50%);
 }
 
 .aboutImg>div:nth-child(2) {
-    background: url("../images/brick.png");
-    clip-path: ellipse(39.8% 43% at 50% 50%);
+    background: url("../images/brick.png") 90px -17px / 65% 65% no-repeat fixed;
+    clip-path: ellipse(29.8% 43% at 50% 50%);
     background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: top;
 }
 
 .aboutImg>div:nth-child(3) {
-    clip-path: ellipse(37.3% 36.8% at 50% 50%);
+    clip-path: ellipse(27.3% 36.8% at 50% 50%);
     background: silver;
 }
 
 .aboutImg>div:nth-child(4) {
-    clip-path: ellipse(37% 36% at 50% 50%);
-    background: url("../images/walkinginpennsylvania.jpg") 53px -150px / 90% 100% no-repeat fixed;
+    clip-path: ellipse(27% 36% at 50% 50%);
+    background: url("../images/walkinginpennsylvania.jpg") 90px -16px / 60% 65% no-repeat fixed;
+    background-position-x: center;
+    background-position-y: -15%;
 }
 
 .aboutImg>div:nth-child(5) {
-    clip-path: ellipse(7.2% 10.2% at 91% 88%);
+    clip-path: ellipse(5.1% 16.2% at 91% 78%);
     background: silver;
 }
 
 .aboutImg>div:nth-child(6) {
-    clip-path: ellipse(7% 10% at 91% 88%);
-    background: url("../images/brick.png");
+    clip-path: ellipse(5% 16% at 91% 78%);
+    background: url("../images/brick.png") 810px -46px / 63% 65% no-repeat fixed;
     background-attachment: fixed;
+    background-position-x: right;
+    background-position-y: top;
 }
 
 #about {
@@ -117,29 +127,31 @@ nav a {
 }
 
 #about p {
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     width: 66%;
     margin: 20px auto;
 }
 
 #skills {
+    position: absolute;
+    bottom: 10px;
     display: flex;
     justify-content: space-between;
     width: 60%;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 40px;
     left: 0;
     right: 0;
+    margin: 0 auto;
 }
 
 #skills > img{
     width: 5%;
 }
 
-#skills > img:hover {
+#skills > img:hover{
     transform: scale(1.5);
-    margin: 0px 1%;
+    position: relative;
+    margin: 0 1%;
+    /* top: -25px; */
 }
 
 #divider1 {
@@ -176,11 +188,11 @@ nav a {
 .workImg>h1 {
     position: absolute;
     top: -2vh;
-    transform: skew(-10deg, -10deg);
+    transform: skew(-10deg, -7deg);
     color: white;
-    font-size: 5vw;
-    /* text-shadow: black 10px 5px 1px; */
-    left: 5%;
+    font-size: 4vw;
+    left: 10%;
+    top: 9%;
 }
 
 @keyframes img2 {
@@ -515,7 +527,7 @@ nav a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 5vh;
+    height: 40vh;
     padding: 5vh 5%;
     margin: 0 auto 36.8vh;
     position: relative;
@@ -652,11 +664,6 @@ section h2 {
     margin-top: 0px;
 }
 
-.target {
-    font-size: 18px;
-    transition: font-size 2s ease 0s;
-}
-
 .display {
     padding: 40px;
 }
@@ -664,11 +671,4 @@ section h2 {
 embed {
     width: 100%;
     height: 80vh;
-}
-
-@media screen and (max-width:1000px) {
-    .aboutImg>div:nth-child(4) {
-        clip-path: ellipse(37% 36% at 50% 50%);
-        background: url("../images/walkinginpennsylvania.jpg") 53px -30px / 73% 60% no-repeat fixed;
-    }
 }
