@@ -41,7 +41,7 @@ nav a {
     margin: 30px;
     font-size: 1.5vw;
     transition: color 0.3s ease 0s;
-}  
+}
 
 #workDiv {
     background: #ad5104;
@@ -671,4 +671,25 @@ section h2 {
 embed {
     width: 100%;
     height: 80vh;
+}
+
+@media screen and (max-width:414px) and (min-height:890px) {
+    header {
+        flex-wrap: wrap;
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #aboutH1 {
+        font-size: 3.5vw;
+        width: 100%;
+    }
 }
