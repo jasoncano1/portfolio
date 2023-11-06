@@ -177,7 +177,7 @@ nav a {
 .workImg {
     position: relative;
     height: 30vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 80%;
     margin: 0 auto;
     background: #ad5104;
@@ -867,6 +867,16 @@ embed {
     }
 }
 
+/* iPhone 14 Pro Max */
+@media screen and (max-width:420px) and (min-height:900px) {
+    .aboutImg>div:nth-child(4) {
+        clip-path: ellipse(27% 36% at 50% 50%);
+        background: url("../images/walkinginpennsylvania.jpg") 124px 104px / 100% 60% no-repeat fixed;
+        background-position-x: center;
+        background-position-y: -15%;
+    }
+}
+
 @media screen and (max-width:430px) and (min-height:890px) {
     header {
         flex-wrap: wrap;
@@ -1091,6 +1101,7 @@ embed {
     }
 }
 
+/*iPhone XR */
 @media screen and (max-width:420px) and (min-height:890px) {
     header {
         flex-wrap: wrap;
@@ -1115,21 +1126,22 @@ embed {
     }
 
     .aboutImg>div:nth-child(2) {
-        background: url("../images/brick.png") 70px -41px / 74% 55% no-repeat fixed;
+        background: url("../images/brick.png") 74px -2px / 62% 43% no-repeat fixed;
     }
 
     .aboutImg>div:nth-child(4) {
         clip-path: ellipse(27% 36% at 50% 50%);
-        background: url("../images/walkinginpennsylvania.jpg") 124px 104px / 100% 60% no-repeat fixed;
-        background-position-x: center;
-        background-position-y: -15%;
+        background: url("../images/walkinginpennsylvania.jpg") -45px -44px / 100% 51% no-repeat fixed;
+        /* background-position-x: center; */
+        /* background-position-y: -15%; */
     }
 
     .aboutImg>div:nth-child(6) {
-        background: url("../images/brick.png") 810px -42px / 175% 50% no-repeat fixed;
-        background-attachment: fixed;
-        background-position-x: right;
-        background-position-y: top;
+        clip-path: ellipse(5% 16% at 91% 78%);
+        background: url("../images/brick.png") -190px 51px / 175% 38% no-repeat fixed;
+        /* background-attachment: fixed; */
+        /* background-position-x: right; */
+        /* background-position-y: top; */
     }
 
     .aboutImg>h1 {
@@ -1165,6 +1177,7 @@ embed {
     .workImg>h1 {
         transform: skew(-10deg, -11deg);
         font-size: 3rem;
+        top: 10%;
     }
 
     .workImg>div:nth-child(2) {
@@ -1254,9 +1267,9 @@ embed {
     }
 
     #contactTitle {
-        font-size: 2rem;
-        margin-left: 15px;
-        margin-top: 10px;
+        font-size: 2.7rem;
+        margin-left: 0px;
+        margin-top: 25px;
     }
 
     #contactImg {
@@ -1296,19 +1309,21 @@ embed {
 
     #contact > div {
         width: 100%;
-        flex-direction: row;
-        margin-top: 40px;
+        flex-direction: column;
+        margin-top: 30px;
+        height: 25vh;
     }
 
     #contact>div>a {
-        width: 30%;
+        width: 95%;
     }
 
     #contact>div>a>button {
-        border-radius: 0px;
+        border-radius: 5px;
     }
 }
 
+/* iPhone 12 Pro */
 @media screen and (max-width:400px) and (min-height:660px) {
     header {
         flex-wrap: wrap;
@@ -1333,26 +1348,26 @@ embed {
     }
 
     .aboutImg>div:nth-child(2) {
-        background: url("../images/brick.png") 70px -41px / 74% 58% no-repeat fixed;
+        background: url("../images/brick.png") 70px -41px / 74% 63% no-repeat fixed;
     }
 
     .aboutImg>div:nth-child(4) {
         clip-path: ellipse(27% 36% at 50% 50%);
-        background: url("../images/walkinginpennsylvania.jpg") 124px 104px / 100% 64% no-repeat fixed;
+        background: url("../images/walkinginpennsylvania.jpg") 124px 104px / 100% 68% no-repeat fixed;
         background-position-x: center;
         background-position-y: -15%;
     }
 
     .aboutImg>div:nth-child(6) {
-        background: url("../images/brick.png") 810px -42px / 175% 53% no-repeat fixed;
+        background: url("../images/brick.png") 810px -42px / 175% 57% no-repeat fixed;
         background-attachment: fixed;
         background-position-x: right;
         background-position-y: top;
     }
 
     .aboutImg>h1 {
-        font-size: 1.5rem;
-        left: 3%;
+        font-size: 1.2rem;
+        left: 5%;
     }
 
     #aboutH1 {
@@ -1381,8 +1396,13 @@ embed {
     }
 
     .workImg>h1 {
-        transform: skew(-10deg, -11deg);
-        font-size: 3rem;
+        position: absolute;
+        top: -2vh;
+        transform: skew(-10deg, -9deg);
+        color: white;
+        font-size: 2rem;
+        left: 0%;
+        top: 14%;
     }
 
     .workImg>div:nth-child(2) {
@@ -1438,7 +1458,7 @@ embed {
     }
 
     #p1 {
-        font-size: 1rem;
+        font-size: 0.7rem;
         grid-area: 3/1/7/11;
         text-align: center;
     }
@@ -1472,9 +1492,9 @@ embed {
     }
 
     #contactTitle {
-        font-size: 2rem;
-        margin-left: 15px;
-        margin-top: 10px;
+        font-size: 1.7rem;
+        margin-left: 0px;
+        margin-top: 20px;
     }
 
     #contactImg {
@@ -1514,19 +1534,24 @@ embed {
 
     #contact > div {
         width: 100%;
-        flex-direction: row;
-        margin-top: 40px;
+        flex-direction: column;
+        margin-top: 20px;
+        height: 25vh;
+        align-content: center;
+        flex-wrap: wrap;
     }
 
     #contact>div>a {
-        width: 30%;
+        width: 80%;
     }
 
     #contact>div>a>button {
-        border-radius: 0px;
+        border-radius: 9px;
+        height: 5vh;
     }
 }
 
+/* iPhone SE */
 @media screen and (max-width:380px) and (min-height:660px) {
 
     #about p {

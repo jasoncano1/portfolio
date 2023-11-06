@@ -81,8 +81,9 @@ const contactAnimation = () => {
 };
 
 window.addEventListener('scroll', () => {
-    console.log(window.scrollY, contactImg.getClientRects()[0].top);
-    if (contactImg.getClientRects()[0].top <= contactImg.offsetHeight) contactAnimation();
+    // console.log(window.scrollY, contactImg.getClientRects()[0].top);
+    // if (contactImg.getClientRects()[0].top <= contactImg.offsetHeight) contactAnimation();
+    if (contactImg.getClientRects()[0].top <= window.innerHeight/2) contactAnimation();
 });
 
 const resetContact = () => {
