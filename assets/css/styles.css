@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0px;
@@ -143,11 +142,11 @@ nav a {
     margin: 0 auto;
 }
 
-#skills > img{
+#skills>img {
     width: 5%;
 }
 
-#skills > img:hover{
+#skills>img:hover {
     transform: scale(1.5);
     position: relative;
     margin: 0 1%;
@@ -168,7 +167,7 @@ nav a {
     background-repeat: no-repeat;
 }
 
-#divider2 > div {
+#divider2>div {
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, #ad5104 0%, transparent 100%);
@@ -285,6 +284,7 @@ nav a {
     width: 80%;
     height: 100vh;
     bottom: 25%;
+    overflow: hidden;
     animation: img2 20s 5s infinite;
 }
 
@@ -310,8 +310,6 @@ nav a {
 .workImg5 {
     width: 100%;
     height: 100vh;
-    /* animation: img2 20s infinite; */
-    /* background-attachment: fixed; */
 }
 
 @keyframes img3 {
@@ -388,8 +386,6 @@ nav a {
     width: 60%;
     margin: 0px auto;
     height: fit-content;
-    /* padding-top: 5vh; */
-    /* height: 10vh; */
 }
 
 #appNav img:active {
@@ -403,7 +399,6 @@ nav a {
 #appNav img {
     border: 2 solid transparent;
     border-radius: 8px;
-    /* width: 18%; */
     height: 10vh;
     max-width: 18%;
 }
@@ -411,7 +406,6 @@ nav a {
 #appDiv {
     width: 60%;
     margin: 5vh auto;
-    /* height: fit-content; */
     display: flex;
     justify-content: space-between;
     height: 30vh;
@@ -422,7 +416,6 @@ nav a {
 }
 
 #appDiv>a>img {
-    /* width: 100%; */
     border-radius: 8px;
     height: 30vh;
     max-width: 100%;
@@ -472,7 +465,6 @@ nav a {
 #h1 {
     text-align: center;
     margin: 0 auto;
-    /* width: 100%; */
     font-size: 2vw;
 }
 
@@ -534,18 +526,18 @@ nav a {
     background: black;
 }
 
-#contact > * {
+#contact>* {
     opacity: 0;
 }
 
-#contact > img {
+#contact>img {
     width: 30%;
     border-radius: 50%;
     margin-right: 10%;
     border: 3px solid #ad5104;
 }
 
-#contact > div {
+#contact>div {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -578,18 +570,21 @@ nav a {
 }
 
 @keyframes btn {
-    0%{
+    0% {
         opacity: 0;
         filter: none;
     }
-    49%{
+
+    49% {
         filter: none;
         /* filter: blur(0); */
         opacity: 0;
     }
+
     50% {
         filter: blur(100px);
     }
+
     100% {
         filter: blur(0);
         opacity: 1;
@@ -607,6 +602,7 @@ nav a {
     background-size: 100% 200%;
     border-bottom: 3px solid #ad5104;
     background-position-y: 100%;
+    overflow: hidden;
 }
 
 #contactTitle {
@@ -672,69 +668,22 @@ embed {
     height: 80vh;
 }
 
-@media screen and (max-width:980px) and (min-height:920px) {
+/* iPhone 14 Pro Max, Pixel 7 */
+@media screen and (max-width:935px) and (min-height:410px) {
 
-    #aboutH1 {
-        font-size: 3rem;
+    .aboutImg>div:nth-child(2) {
+        background: url("../images/brick.png") 90px -17px / 55% 31% fixed;
+        clip-path: ellipse(29.8% 43% at 50% 50%);
     }
 
-    nav a {
-        font-size: 1.3rem;
-    }
-
-    .aboutImg>h1 {
-        font-size: 2.5rem;
-        left: 17%;
-        top: 0%;
-    }
-
-    #about p {
-        font-size: 1.2rem;
-        width: 66%;
-        margin: 20px auto;
-    }
-    
-    .workImg>h1 {
-        transform: skew(-10deg, -13deg);
-        font-size: 3.5rem;
-        left: 5%;
-    }
-
-    #skills {
-        bottom: 7vh;
-    }
-
-    #divider2 {
-        background: url(../images/background.png);
-        background-size: 100% 187%;
-        height: 40vh;
-        margin-bottom: -5vh;
-        background-repeat: no-repeat;
-    }
-
-    #divider2 > div {
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(180deg, #ad5104 0%, transparent 80%);
-    }
-
-    #contactTitle {
-        font-size: 3.5rem;
-        position: relative;
-        top: 50px;
-    }
-
-    #adam {
-        left: 10%;
-    }
-}
-
-@media screen and (max-width:940px) and (min-height:420px) {
     .aboutImg>div:nth-child(4) {
         clip-path: ellipse(27% 36% at 50% 50%);
-        background: url("../images/walkinginpennsylvania.jpg") 90px -16px / 60% 73% no-repeat fixed;
-        background-position-x: center;
-        background-position-y: -15%;
+        background: url("../images/walkinginpennsylvania.jpg") 170px -3px / 60% 59% fixed;
+    }
+
+    .aboutImg>div:nth-child(6) {
+        clip-path: ellipse(5% 16% at 91% 78%);
+        background: url("../images/brick.png") 810px -46px / 30% 50% fixed;
     }
 
     .workImg>h1 {
@@ -757,7 +706,7 @@ embed {
     }
 
     #appDiv>a>img {
-        width: 90%;
+        width: 100%;
         border-radius: 8px;
         height: 100%;
         max-width: 100%;
@@ -777,7 +726,7 @@ embed {
         font-size: 3.2rem;
     }
 
-    #contact > img {
+    #contact>img {
         width: 25%;
         border-radius: 50%;
         margin-right: 10%;
@@ -785,10 +734,156 @@ embed {
     }
 }
 
+
+/* jason 1/2 screen */
+@media screen and (min-width:935px) and (max-width:980px) and (min-height:920px) {
+
+    #aboutH1 {
+        font-size: 3rem;
+    } 
+
+    nav {
+        padding: 15px;
+        text-align: center;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        width: 55%;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .aboutImg>h1 {
+        font-size: 2.5rem;
+        left: 7%;
+        top: -10%;
+    }
+
+    #about p {
+        font-size: 1.2rem;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .workImg>h1 {
+        transform: skew(-10deg, -13deg);
+        font-size: 3.5rem;
+        left: 5%;
+    }
+
+    #skills {
+        bottom: 7vh;
+        width: 80%;
+    }
+
+    .workImg>h1 {
+        position: absolute;
+        top: -2vh;
+        transform: skew(-10deg, -7deg);
+        color: white;
+        font-size: 3rem;
+        left: 2%;
+        top: 7%;
+    }
+
+    #appNav {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0px auto;
+        height: fit-content;
+    }
+
+    #appNav img {
+        border: 2 solid transparent;
+        border-radius: 8px;
+        height: 7vh;
+        max-width: 18%;
+    }
+
+    #appDiv {
+        width: 60%;
+        margin: 5vh auto;
+        /* height: fit-content; */
+        display: flex;
+        justify-content: space-between;
+        height: 45vh;
+        flex-direction: column;
+    }
+
+
+    #appDiv>a {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        border: unset;
+        background: transparent;
+    }
+
+    #h1 {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    #p1 {
+        font-size: 1rem;
+    }
+
+    .info button {
+        background: #0552a2;
+        color: white;
+        padding: 5px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-radius: 4px;
+        font-size: 1.2rem;
+        height: 5vh;
+        align-items: center;
+    }
+
+    #appDiv>a>img {
+        width: 100%;
+        border-radius: 8px;
+        height: 100%;
+    }
+
+
+    #divider2 {
+        background: url(../images/background.png);
+        background-size: 100% 187%;
+        height: 40vh;
+        margin-bottom: -5vh;
+        background-repeat: no-repeat;
+    }
+
+    #divider2>div {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #ad5104 0%, transparent 80%);
+    }
+
+    #contactTitle {
+        font-size: 3.5rem;
+        position: relative;
+        top: 50px;
+    }
+
+    #adam {
+        left: 10%;
+    }
+}
+
+
+/* iPhone XR */
 @media screen and (max-width:900px) and (min-height:380px) {
     .aboutImg>div:nth-child(4) {
-        background: url("../images/walkinginpennsylvania.jpg") 90px -16px / 60% 71% no-repeat fixed;
-        background-position-x: center;
+        background: url("../images/walkinginpennsylvania.jpg") 146px 0px / 60% 60% no-repeat fixed;
     }
 
     .info {
@@ -813,20 +908,150 @@ embed {
         background-position-y: 100%;
     }
 
-    #contact > img {
+    #contact>img {
         width: 25%;
     }
 }
 
-@media screen and (max-width:670px) and (min-height:370px) {
+/* iPad Mini */
+@media screen and (max-width:770px) and (min-height:1020px) {
+    nav {
+        padding: 15px;
+        text-align: center;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        width: 55%;
+        justify-content: space-between;
+    }
+
+    nav a {
+        color: rgb(255, 255, 255);
+        text-decoration: underline wavy rgb(0, 4, 128);
+        margin: 20px;
+        font-size: 1.2rem;
+        transition: color 0.3s ease 0s;
+    }
+
     .aboutImg>div:nth-child(4) {
-        background: url("../images/walkinginpennsylvania.jpg") 90px -16px / 60% 71% no-repeat fixed;
-        background-position-x: center;
+        background: url("../images/walkinginpennsylvania.jpg") 136px -70px / 60% 60% fixed;
+    }
+
+    .aboutImg>h1 {
+        font-size: 2.5rem;
+        left: 5%;
+        top: 0%;
+    }
+
+    #about p {
+        font-size: 1.5rem;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    #skills {
+        position: absolute;
+        bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .workImg>h1 {
+        position: absolute;
+        top: -2vh;
+        transform: skew(-10deg, -7deg);
+        color: white;
+        font-size: 4rem;
+        left: 2%;
+        top: 0%;
+    }
+
+    #appNav {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0px auto;
+        height: fit-content;
+    }
+
+    #appNav img {
+        border: 2 solid transparent;
+        border-radius: 8px;
+        height: 7vh;
+        max-width: 18%;
+    }
+
+    #appDiv {
+        width: 60%;
+        margin: 5vh auto;
+        display: flex;
+        justify-content: space-between;
+        height: 40vh;
+        flex-direction: column;
+    }
+
+    #appDiv>a {
+        width: 100%;
+    }
+
+    #appDiv>a>img {
+        width: 100%;
+        border-radius: 8px;
+        height: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Galaxy S8+ */
+@media screen and (max-width:750px) and (min-height:350px) {
+    .aboutImg>div:nth-child(4) {
+        clip-path: ellipse(27% 36% at 50% 50%);
+        background: url("../images/walkinginpennsylvania.jpg") 131px -11px / 60% 65% fixed;
+    }
+}
+
+/* iPhone SE */
+@media screen and (max-width:670px) and (min-height:370px) {
+
+    #aboutH1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        color: rgb(255, 255, 255);
+        text-decoration: underline wavy rgb(0, 4, 128);
+        margin: 30px;
+        font-size: 0.8rem;
+        transition: color 0.3s ease 0s;
+    }
+
+    .aboutImg>h1 {
+        position: absolute;
+        transform: skew(-5deg, -25deg);
+        color: white;
+        font-size: 1.2rem;
+        text-shadow: black 10px 5px 1px;
+        left: 17%;
+        top: -1%;
+    }
+
+    .aboutImg>div:nth-child(4) {
+        background: url("../images/walkinginpennsylvania.jpg") 119px 0px / 60% 60% no-repeat fixed;
     }
 
     .info {
         border: unset;
         background: transparent;
+    }
+
+    #about p {
+        font-size: 0.7rem;
+        width: 80%;
+        margin: 20px auto;
     }
 
     #divider2 {
@@ -837,12 +1062,12 @@ embed {
         background-repeat: no-repeat;
     }
 
-    #divider2 > div {
+    #divider2>div {
         background: linear-gradient(180deg, #ad5104 0%, transparent 70%);
     }
 
     .fullContent {
-        height: 100vh;
+        height: 110vh;
     }
 
     #contactTitle {
@@ -862,18 +1087,8 @@ embed {
         background-position-y: 100%;
     }
 
-    #contact > img {
+    #contact>img {
         width: 25%;
-    }
-}
-
-/* iPhone 14 Pro Max */
-@media screen and (max-width:420px) and (min-height:900px) {
-    .aboutImg>div:nth-child(4) {
-        clip-path: ellipse(27% 36% at 50% 50%);
-        background: url("../images/walkinginpennsylvania.jpg") 124px 104px / 100% 60% no-repeat fixed;
-        background-position-x: center;
-        background-position-y: -15%;
     }
 }
 
@@ -992,8 +1207,8 @@ embed {
     .info {
         position: relative;
         display: grid;
-        grid-template-columns: repeat(10,10%);
-        grid-template-rows: repeat(10,10%);
+        grid-template-columns: repeat(10, 10%);
+        grid-template-rows: repeat(10, 10%);
         width: 90%;
         background: transparent;
         height: 40%;
@@ -1034,8 +1249,8 @@ embed {
     #divider2 {
         background-size: 100% 171%;
     }
-    
-    #divider2 > div {
+
+    #divider2>div {
         height: 50%;
         margin-top: -0.2vh;
     }
@@ -1071,17 +1286,17 @@ embed {
         max-width: 60%;
     }
 
-    #contact > img {
+    #contact>img {
         width: 80%;
         border-radius: 50%;
         border: 3px solid #ad5104;
     }
 
-    #contact > img {
+    #contact>img {
         margin: 0;
     }
 
-    #contact > div {
+    #contact>div {
         width: 100%;
         flex-direction: column;
         margin-top: 20px;
@@ -1098,6 +1313,35 @@ embed {
         font-size: 1.2rem;
         height: 4vh;
         border-radius: 4px;
+    }
+}
+
+/* iPhone 14 Pro Max */
+@media screen and (max-width:430px) and (min-height:930px) {
+
+    .aboutImg>h1 {
+        font-size: 1.5rem;
+        left: 8%;
+        top: 5%;
+    }
+
+    .aboutImg>div:nth-child(4) {
+        clip-path: ellipse(27% 36% at 50% 50%);
+        background: url("../images/walkinginpennsylvania.jpg") -36px -96px / 100% 60% fixed;
+    }
+
+    .aboutImg>div:nth-child(2) {
+        background: url("../images/brick.png") 70px -41px / 23% 25% fixed;
+    }
+
+    .aboutImg>div:nth-child(6) {
+        background: url("../images/brick.png") 810px -42px / 75% 30% fixed;
+    }
+
+    #about p {
+        font-size: 1.2rem;
+        width: 90%;
+        margin: 20px auto;
     }
 }
 
@@ -1131,17 +1375,12 @@ embed {
 
     .aboutImg>div:nth-child(4) {
         clip-path: ellipse(27% 36% at 50% 50%);
-        background: url("../images/walkinginpennsylvania.jpg") -45px -44px / 100% 51% no-repeat fixed;
-        /* background-position-x: center; */
-        /* background-position-y: -15%; */
+        background: url("../images/walkinginpennsylvania.jpg") -44px -40px / 100% 51% no-repeat fixed;
     }
 
     .aboutImg>div:nth-child(6) {
         clip-path: ellipse(5% 16% at 91% 78%);
         background: url("../images/brick.png") -190px 51px / 175% 38% no-repeat fixed;
-        /* background-attachment: fixed; */
-        /* background-position-x: right; */
-        /* background-position-y: top; */
     }
 
     .aboutImg>h1 {
@@ -1155,7 +1394,7 @@ embed {
     }
 
     #about p {
-        font-size: 1rem;
+        font-size: 1.1rem;
         width: 90%;
         margin: 20px auto;
     }
@@ -1219,8 +1458,8 @@ embed {
     .info {
         position: relative;
         display: grid;
-        grid-template-columns: repeat(10,10%);
-        grid-template-rows: repeat(10,10%);
+        grid-template-columns: repeat(10, 10%);
+        grid-template-rows: repeat(10, 10%);
         width: 90%;
         background: transparent;
         height: 40%;
@@ -1261,8 +1500,8 @@ embed {
     #divider2 {
         background-size: 100% 180%;
     }
-    
-    #divider2 > div {
+
+    #divider2>div {
         height: 50%;
     }
 
@@ -1297,17 +1536,17 @@ embed {
         max-width: 60%;
     }
 
-    #contact > img {
+    #contact>img {
         width: 80%;
         border-radius: 50%;
         border: 3px solid #ad5104;
     }
 
-    #contact > img {
+    #contact>img {
         margin: 0;
     }
 
-    #contact > div {
+    #contact>div {
         width: 100%;
         flex-direction: column;
         margin-top: 30px;
@@ -1323,8 +1562,14 @@ embed {
     }
 }
 
+
 /* iPhone 12 Pro */
-@media screen and (max-width:400px) and (min-height:660px) {
+@media screen and (max-width:400px) and (min-height:840px) {
+
+    /* * {
+        border: 1px solid red;
+    } */
+
     header {
         flex-wrap: wrap;
         height: fit-content;
@@ -1348,21 +1593,16 @@ embed {
     }
 
     .aboutImg>div:nth-child(2) {
-        background: url("../images/brick.png") 70px -41px / 74% 63% no-repeat fixed;
+        background: url("../images/brick.png") 70px 29px / 74% 20% fixed;
     }
 
     .aboutImg>div:nth-child(4) {
         clip-path: ellipse(27% 36% at 50% 50%);
-        background: url("../images/walkinginpennsylvania.jpg") 124px 104px / 100% 68% no-repeat fixed;
-        background-position-x: center;
-        background-position-y: -15%;
+        background: url("../images/walkinginpennsylvania.jpg") -36px -62px / 100% 58% no-repeat fixed;
     }
 
     .aboutImg>div:nth-child(6) {
-        background: url("../images/brick.png") 810px -42px / 175% 57% no-repeat fixed;
-        background-attachment: fixed;
-        background-position-x: right;
-        background-position-y: top;
+        background: url("../images/brick.png") 810px -42px / 50% 17% fixed;
     }
 
     .aboutImg>h1 {
@@ -1444,8 +1684,8 @@ embed {
     .info {
         position: relative;
         display: grid;
-        grid-template-columns: repeat(10,10%);
-        grid-template-rows: repeat(10,10%);
+        grid-template-columns: repeat(10, 10%);
+        grid-template-rows: repeat(10, 10%);
         width: 90%;
         background: transparent;
         height: 40vh;
@@ -1486,8 +1726,8 @@ embed {
     #divider2 {
         background-size: 100% 180%;
     }
-    
-    #divider2 > div {
+
+    #divider2>div {
         height: 50%;
     }
 
@@ -1522,17 +1762,20 @@ embed {
         max-width: 60%;
     }
 
-    #contact > img {
+    #contact>img {
         width: 80%;
         border-radius: 50%;
         border: 3px solid #ad5104;
     }
 
-    #contact > img {
-        margin: 0;
+    #contact>img {
+        width: 60%;
+        border-radius: 50%;
+        border: 3px solid #ad5104;
+        margin: 0 auto;
     }
 
-    #contact > div {
+    #contact>div {
         width: 100%;
         flex-direction: column;
         margin-top: 20px;
@@ -1548,15 +1791,232 @@ embed {
     #contact>div>a>button {
         border-radius: 9px;
         height: 5vh;
+        font-size: .9rem;
     }
 }
 
 /* iPhone SE */
 @media screen and (max-width:380px) and (min-height:660px) {
 
+    /* * {
+        border: 1px solid red;
+    } */
+
+    header {
+        color: rgb(255, 255, 255);
+        padding: unset;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid silver;
+        height: unset;
+        flex-direction: column;
+    }
+
+    .aboutImg {
+        position: relative;
+        height: 30vh;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .aboutImg>h1 {
+        font-size: 1.2rem;
+        left: 6%;
+        top: 5%;
+    }
+
+    .aboutImg>div:nth-child(2) {
+        background: url("../images/brick.png") 60px -7px / 90% 55% no-repeat fixed;
+        clip-path: ellipse(29.8% 43% at 50% 50%);
+    }
+
+    .aboutImg>div:nth-child(4) {
+        clip-path: ellipse(27% 36% at 50% 50%);
+        background: url("../images/walkinginpennsylvania.jpg") -44px 72px / 100% 48% fixed;
+    }
+
+    .aboutImg>div:nth-child(6) {
+        clip-path: ellipse(5% 16% at 91% 78%);
+        background: url("../images/brick.png") 800px 22px / 100% fixed;
+    }
+
     #about p {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         width: 90%;
         margin: 20px auto;
     }
+
+    #skills {
+        position: absolute;
+        bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .workImg {
+        position: relative;
+        height: 20vh;
+        overflow: hidden;
+        width: 80%;
+        margin: 0 auto;
+        background: #ad5104;
+        padding: 10vh 10% 0vh;
+    }
+
+    .workImg>h1 {
+        position: absolute;
+        top: -2vh;
+        transform: skew(-10deg, -7deg);
+        color: white;
+        font-size: 3rem;
+        left: 2%;
+        top: 0%;
+    }
+
+    #appNav {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0px auto;
+        height: fit-content;
+    }
+
+    #appDiv {
+        width: 90%;
+        margin: 5vh auto;
+        display: flex;
+        justify-content: space-between;
+        height: 40vh;
+        flex-direction: column;
+    }
+
+    #appNav img {
+        border: 2 solid transparent;
+        border-radius: 8px;
+        width: 16%;
+        height: 6vh;
+        max-width: 18%;
+    }
+
+    #appDiv>a {
+        width: 100%;
+    }
+
+    #appDiv>a>img {
+        width: 100%;
+        border-radius: 8px;
+        height: 100%;
+        max-width: 100%;
+    }
+
+    .info {
+        width: 95%;
+        margin: 0px auto;
+        border: unset;
+        background: transparent;
+    }
+
+    #h1 {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    #p1 {
+        font-size: 1rem;
+    }
+
+    .info button {
+        background: #0552a2;
+        color: white;
+        padding: 5px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-radius: 4px;
+        font-size: 0.7rem;
+        height: 22px;
+        align-items: center;
+    }
+
+    #contactImg {
+        position: relative;
+        height: 25vh;
+        background: url(../images/background.png);
+        background-size: 100% 200%;
+        border-bottom: 3px solid #ad5104;
+        background-position-y: 100%;
+    }
+
+    #adam {
+        position: absolute;
+        opacity: 0;
+        bottom: 0;
+        height: 15vh;
+        left: 10%;
+        animation: adam 1.5s linear;
+        max-width: 30%;
+    }
+
+    #God {
+        position: absolute;
+        left: 42%;
+        opacity: 0;
+        top: 17%;
+        height: 20vh;
+        animation: God 3s;
+        max-width: 60%;
+    }
+
+    #contact {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: unset;
+        padding: 5vh 5%;
+        margin: 0 auto 36.8vh;
+        position: relative;
+        z-index: 2;
+        background: black;
+        flex-direction: column;
+    }
+
+    #contact>img {
+        width: 60%;
+        margin: 2vh auto;
+    }
+
+    #contact>div {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: space-around;
+        height: 20vh;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+    }
+
+    #contact>div>a>button {
+        background: #ad5104;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        font-size: 1.2vw;
+        color: white;
+        border-radius: 5px;
+        height: 30px;
+        border: 1px solid white;
+        font-size: 0.8rem;
+    }
+
 }
