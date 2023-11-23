@@ -668,6 +668,60 @@ embed {
     height: 80vh;
 }
 
+/* g full screen */
+@media screen and (max-width:1300px)  {
+
+    .aboutImg>div:nth-child(2) {
+        background: url("../images/brick.png") 90px -17px / 40% 40% fixed;
+        clip-path: ellipse(29.8% 43% at 50% 50%);
+    }
+
+    .aboutImg>div:nth-child(4) {
+        clip-path: ellipse(27% 36% at 50% 50%);
+        background: url("../images/walkinginpennsylvania.jpg") 270px -16px / 60% 65% fixed;
+    }
+
+    .aboutImg>div:nth-child(6) {
+        clip-path: ellipse(5% 16% at 91% 78%);
+        background: url("../images/brick.png") 810px -46px / 40% 40% fixed;
+    }
+
+    #skills {
+        position: absolute;
+        bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    #divider2 {
+        background: url(../images/background.png);
+        background-size: 100% 200%;
+        height: 40vh;
+        margin-bottom: -5vh;
+        background-repeat: no-repeat;
+        background-position-y: -30px;
+    }
+
+    #divider2>div {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #ad5104 0%, transparent 70%);
+    }
+
+    #contact>img {
+        width: 25%;
+        border-radius: 50%;
+        margin-right: 10%;
+        border: 3px solid #ad5104;
+    }
+
+
+}
+
 /* iPhone 14 Pro Max, Pixel 7 */
 @media screen and (max-width:935px) and (min-height:410px) {
 
@@ -913,6 +967,229 @@ embed {
     }
 }
 
+/* g little screen */
+@media screen and (max-width:820px) and (min-height:440px) {
+
+    .aboutImg>div:nth-child(4) {
+        background: url("../images/walkinginpennsylvania.jpg") 156px 20px / 60% 60% fixed;
+    }
+
+    #adam {
+        position: absolute;
+        opacity: 0;
+        bottom: 0;
+        height: 20vh;
+        left: 20%;
+        animation: adam 1.5s linear;
+        max-width: 30%;
+    }
+}
+
+/* iPad Air */
+@media screen and (max-width:820px) and (min-height:1180px) {
+
+    #aboutH1 {
+        font-size: 3rem;
+        margin-left: 20px;
+    }
+
+    nav a {
+        color: rgb(255, 255, 255);
+        text-decoration: underline wavy rgb(0, 4, 128);
+        margin: 30px;
+        font-size: 1rem;
+        transition: color 0.3s ease 0s;
+    }
+    
+    .aboutImg>h1 {
+        position: absolute;
+        transform: skew(-5deg, -25deg);
+        color: white;
+        font-size: 2.5rem;
+        text-shadow: black 10px 5px 1px;
+        left: 10%;
+        top: -3%;
+    }
+
+    .aboutImg>div:nth-child(4) {
+        background: url("../images/walkinginpennsylvania.jpg") 146px -29px / 60% 60% fixed;
+    }
+
+    .aboutImg>div:nth-child(6) {
+        clip-path: ellipse(5% 16% at 91% 78%);
+        background: url("../images/brick.png") 810px -46px / 60% 30% fixed;
+    }
+
+    #about p {
+        font-size: 1.3rem;
+        width: 66%;
+        margin: 20px auto;
+    }
+
+    .workImg {
+        position: relative;
+        height: 15vh;
+        width: 80%;
+        margin: 0vh auto;
+        background: #ad5104;
+        padding: 7vh 10% 0;
+    }
+
+    .workImg>h1 {
+        position: absolute;
+        top: -2vh;
+        transform: skew(-10deg, -7deg);
+        color: white;
+        font-size: 4rem;
+        left: 2%;
+        top: 0%;
+    }
+
+    #appDiv {
+        width: 60%;
+        margin: 5vh auto;
+        display: flex;
+        justify-content: space-between;
+        height: 40vh;
+        flex-direction: column;
+    }
+
+    #appDiv>a {
+        width: 100%;
+    }
+
+    #appNav {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 5vh auto;
+        height: fit-content;
+    }
+
+    #appNav img {
+        border: 2 solid transparent;
+        border-radius: 8px;
+        height: 5vh;
+        max-width: 18%;
+    }
+
+    .info {
+        width: 100%;
+        border: unset;
+        background: transparent;
+    }
+
+    #h1 {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+
+    #p1 {
+        font-size: 1.2rem;
+    }
+
+    .info button {
+        background: #0552a2;
+        color: white;
+        padding: 5px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-radius: 4px;
+        font-size: 1.2rem;
+        height: 3vh;
+        align-items: center;
+    }
+
+    #divider2 {
+        background: url(../images/background.png);
+        background-size: 100% 200%;
+        height: 40vh;
+        margin-bottom: -5vh;
+        background-repeat: no-repeat;
+        background-position-y: -95px;
+    }
+
+    #divider2>div {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #ad5104 20%, transparent 70%);
+    }
+
+    #contactTitle {
+        font-size: 4rem;
+    }
+
+    #contactImg {
+        position: relative;
+        height: 30vh;
+        background: url(../images/background.png);
+        background-size: 100% 200%;
+        border-bottom: 3px solid #ad5104;
+        background-position-y: 100%;
+    }
+
+    #adam {
+        position: absolute;
+        opacity: 0;
+        bottom: 0;
+        height: 15vh;
+        left: 10%;
+        animation: adam 1.5s linear;
+        max-width: 30%;
+    }
+
+    #God {
+        position: absolute;
+        left: 45%;
+        opacity: 0;
+        top: 25%;
+        height: 22vh;
+        animation: God 3s;
+        max-width: 60%;
+    }
+
+    #contact {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 40vh;
+        padding: 5vh 5%;
+        margin: 0 auto 36.8vh;
+        position: relative;
+        z-index: 2;
+        background: black;
+        align-content: center;
+    }
+
+    #contact>img {
+        width: 50%;
+        margin-right: 5%;
+    }
+    #contact>div>a>button {
+        background: #ad5104;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        font-size: 1rem;
+        color: white;
+        border-radius: 5px;
+        height: 3vh;
+        border: 1px solid white;
+    }
+
+    #contact>div {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: space-around;
+    }
+}
+
 /* iPad Mini */
 @media screen and (max-width:770px) and (min-height:1020px) {
     nav {
@@ -1090,6 +1367,188 @@ embed {
     #contact>img {
         width: 25%;
     }
+}
+
+/* g 1/2 screen */
+@media screen and (max-width:650px) and (min-height:610px) {
+
+    .fullContent {
+        height: 100vh;
+    }
+    
+    nav {
+        padding: 15px;
+        text-align: center;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        width: 58%;
+        justify-content: space-between;
+    }
+
+    nav a {
+        color: rgb(255, 255, 255);
+        text-decoration: underline wavy rgb(0, 4, 128);
+        font-size: 0.8rem;
+        transition: color 0.3s ease 0s;
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        margin: 0;
+    }
+
+    #about p {
+        font-size: 1rem;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #skills {
+        position: absolute;
+        bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .workImg {
+        position: relative;
+        height: 10vh;
+        width: 80%;
+        margin: 0 auto;
+        background: #ad5104;
+        padding: 10vh 10% 0;
+    }
+
+    .workImg>h1 {
+        position: absolute;
+        top: -2vh;
+        transform: skew(-10deg, -7deg);
+        color: white;
+        font-size: 3rem;
+        left: 5%;
+        top: -10%;
+    }
+
+    #appNav {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin: 5vh auto 0;
+        height: fit-content;
+    }
+
+    #appNav img {
+        border: 2 solid transparent;
+        border-radius: 8px;
+        height: 7vh;
+        max-width: 18%;
+    }
+
+    #appDiv {
+        width: 60%;
+        margin: 1vh auto;
+        display: flex;
+        justify-content: space-between;
+        height: 50vh;
+        flex-direction: column;
+    }
+
+    #appDiv>a {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    .info {
+        width: 100%;
+        border: unset;
+        background: transparent;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+    .info button {
+        background: #0552a2;
+        color: white;
+        padding: 5px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-radius: 4px;
+        font-size: 1rem;
+        height: 5vh;
+        align-items: center;
+    }
+
+    #h1 {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    #p1 {
+        font-size: 0.8rem;
+    }
+
+    #a2 {
+        width: 30%;
+        align-items: end;
+        display: flex;
+    }
+
+    #a3 {
+        width: 30%;
+        display: flex;
+        align-items: end;
+    }
+
+    #contactTitle {
+        color: white;
+        font-size: 3rem;
+        position: absolute;
+        top: 10px;
+        left: 18px;
+    }
+
+    #adam {
+        position: absolute;
+        opacity: 0;
+        bottom: 0;
+        height: 20vh;
+        left: 10%;
+        animation: adam 1.5s linear;
+        max-width: 30%;
+    }
+
+    #contact>div {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: space-around;
+    }
+
+    #contact>img {
+        width: 40%;
+    }
+
+    #contact>div>a>button {
+        background: #ad5104;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        font-size: 0.9rem;
+        color: white;
+        border-radius: 5px;
+        height: 5vh;
+        border: 1px solid white;
+    }
+
 }
 
 @media screen and (max-width:430px) and (min-height:890px) {
