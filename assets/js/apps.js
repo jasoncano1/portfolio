@@ -7,11 +7,11 @@ const apps = [
         image: 'assets/images/picquest.png',
     },
     {
-        name: 'Note Taker',
-        url: 'https://notetaker-jc-7e9b2e3fe567.herokuapp.com',
-        description: 'This is a Heroku hosted application that allows you to create, save, and delete notes.',
-        github: 'https://github.com/jasoncano1/notetaker',
-        image: 'assets/images/note-taker.png'
+        name: 'Week Scheduler',
+        url: 'https://jasoncano1.github.io/Workday-Scheduler/',
+        description: 'This is application is a work week scheduler that will save your tasks to local storage.',
+        github: 'https://github.com/jasoncano1/Workday-Scheduler',
+        image: 'assets/images/weekscheduler.png'
     },
     {
         name: 'Quiz-Game',
