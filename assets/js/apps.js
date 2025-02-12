@@ -8,7 +8,7 @@ const apps = [
     },
     {
         name: 'Week Scheduler',
-        url: 'https://jasoncano1.github.io/Workday-Scheduler/',
+        url: 'https://workweekscheduler-f0d43aaa27a0.herokuapp.com/',
         description: 'This is application is a work week scheduler that will save your tasks to local storage.',
         github: 'https://github.com/jasoncano1/Workday-Scheduler',
         image: 'assets/images/weekscheduler.png'
